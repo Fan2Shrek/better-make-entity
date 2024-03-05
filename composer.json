@@ -1,0 +1,17 @@
+{
+    "name": "fan2shrek/better-maker",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fan2shrek\\BetterMaker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fan2Shrek",
+            "email": "pierre27.ambroise@gmail.com"
+        }
+    ],
+    "require": {}
+}

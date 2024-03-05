@@ -4,7 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Fan2shrek\\BetterMaker\\": "src/"
+            "Fan2Shrek\\BetterMaker\\": "src/"
         }
     },
     "authors": [
@@ -13,5 +13,7 @@
             "email": "pierre27.ambroise@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/framework-bundle": "^7.0"
+    }
 }

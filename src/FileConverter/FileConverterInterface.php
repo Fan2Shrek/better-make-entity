@@ -2,7 +2,8 @@
 
 namespace Fan2Shrek\FileConverter;
 
-use Fan2Shrek\BetterMaker\EntitySwarm;
+use Fan2Shrek\BetterMaker\Schema\EntitySwarm;
+
 
 interface FileConverterInterface
 {

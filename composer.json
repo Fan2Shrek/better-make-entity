@@ -7,6 +7,11 @@
             "Fan2Shrek\\BetterMaker\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Fan2Shrek\\BetterMaker\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Fan2Shrek",
@@ -17,5 +22,15 @@
         "symfony/framework-bundle": "^7.0",
         "symfony/console": "^7.0",
         "nette/php-generator": "^4.1"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "symfony/runtime": "^7.0",
+        "phpunit/phpunit": "9.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
     }
 }

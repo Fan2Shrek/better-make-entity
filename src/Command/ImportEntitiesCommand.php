@@ -7,6 +7,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Fan2Shrek\BetterMaker\EntityimporterInterface;
 
 #[AsCommand(
     'import:entities',
@@ -16,6 +17,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 )]
 class ImportEntitiesCommand extends Command
 {
+    public function __construct(
+        private EntityimporterInterface $importer,
+    ) {
+    }
+
     protected function configure(): void
     {
         $this->setDescription('Import entities from a file');
@@ -26,6 +32,8 @@ class ImportEntitiesCommand extends Command
     {
         $file = $input->getArgument('file');
         $output->writeln("Importing entities from $file");
+
+        $this->importer->import($file);
 
         return Command::SUCCESS;
     }

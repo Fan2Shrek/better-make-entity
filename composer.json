@@ -4,7 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Fan2Shrek\\BetterMaker\\": "src/"
+            "Fan2Shrek\\BetterMaker\\": ""
         }
     },
     "autoload-dev": {
@@ -26,7 +26,8 @@
     "require-dev": {
         "symfony/phpunit-bridge": "^7.0",
         "symfony/runtime": "^7.0",
-        "phpunit/phpunit": "9.6"
+        "phpunit/phpunit": "9.6",
+        "symfony/yaml": "^7.0"
     },
     "config": {
         "allow-plugins": {

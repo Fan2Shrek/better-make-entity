@@ -7,13 +7,12 @@ class EntityDefinition
     private string $name;
     /** @var FieldDefinition[] */
     private array $fields;
-    private array $required;
 
-    public function __construct(string $name, array $fields, array $required)
+
+    public function __construct(string $name, array $fields)
     {
         $this->name = $name;
         $this->fields = $fields;
-        $this->required = $required;
     }
 
     public function getName(): string
@@ -24,10 +23,5 @@ class EntityDefinition
     public function getFields(): array
     {
         return $this->fields;
-    }
-
-    public function getRequired(): array
-    {
-        return $this->required;
     }
 }

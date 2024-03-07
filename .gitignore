@@ -1,5 +1,5 @@
 /vendor/
-
+/var/
 /bin/
 
 .phpunit.result.cache
